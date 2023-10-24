@@ -18,6 +18,7 @@
 		DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */; };
 		DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB212AE8554200433041 /* MainPageViewController.swift */; };
 		DA92EB242AE8559600433041 /* NewAndPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */; };
+		DA92EB262AE856ED00433041 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB252AE856ED00433041 /* MyAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPwdViewController.swift; sourceTree = "<group>"; };
 		DA92EB212AE8554200433041 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndPopularViewController.swift; sourceTree = "<group>"; };
+		DA92EB252AE856ED00433041 /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */,
 				DA92EB212AE8554200433041 /* MainPageViewController.swift */,
 				DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */,
+				DA92EB252AE856ED00433041 /* MyAccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */,
 				DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */,
 				DA92EB072AE850D900433041 /* SceneDelegate.swift in Sources */,
+				DA92EB262AE856ED00433041 /* MyAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
