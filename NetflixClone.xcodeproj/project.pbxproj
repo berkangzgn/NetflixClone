@@ -17,6 +17,7 @@
 		DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */; };
 		DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */; };
 		DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB212AE8554200433041 /* MainPageViewController.swift */; };
+		DA92EB242AE8559600433041 /* NewAndPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPwdViewController.swift; sourceTree = "<group>"; };
 		DA92EB212AE8554200433041 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndPopularViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */,
 				DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */,
 				DA92EB212AE8554200433041 /* MainPageViewController.swift */,
+				DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA92EB092AE850D900433041 /* ViewController.swift in Sources */,
+				DA92EB242AE8559600433041 /* NewAndPopularViewController.swift in Sources */,
 				DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */,
 				DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */,
 				DA92EB052AE850D900433041 /* AppDelegate.swift in Sources */,
