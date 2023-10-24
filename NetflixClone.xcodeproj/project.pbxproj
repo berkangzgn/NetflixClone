@@ -14,6 +14,8 @@
 		DA92EB0E2AE850DC00433041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA92EB0D2AE850DC00433041 /* Assets.xcassets */; };
 		DA92EB112AE850DC00433041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA92EB0F2AE850DC00433041 /* LaunchScreen.storyboard */; };
 		DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1B2AE852F200433041 /* RootViewController.swift */; };
+		DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */; };
+		DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DA92EB102AE850DC00433041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA92EB122AE850DC00433041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA92EB1B2AE852F200433041 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPwdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 			children = (
 				DA92EB082AE850D900433041 /* ViewController.swift */,
 				DA92EB1B2AE852F200433041 /* RootViewController.swift */,
+				DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */,
+				DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA92EB092AE850D900433041 /* ViewController.swift in Sources */,
+				DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */,
 				DA92EB052AE850D900433041 /* AppDelegate.swift in Sources */,
 				DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */,
+				DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */,
 				DA92EB072AE850D900433041 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
