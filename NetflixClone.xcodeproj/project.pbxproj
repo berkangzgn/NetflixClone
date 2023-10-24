@@ -16,6 +16,7 @@
 		DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1B2AE852F200433041 /* RootViewController.swift */; };
 		DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */; };
 		DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */; };
+		DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB212AE8554200433041 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DA92EB1B2AE852F200433041 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPwdViewController.swift; sourceTree = "<group>"; };
+		DA92EB212AE8554200433041 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				DA92EB1B2AE852F200433041 /* RootViewController.swift */,
 				DA92EB1D2AE8536000433041 /* SelectUserViewController.swift */,
 				DA92EB1F2AE853C400433041 /* UserPwdViewController.swift */,
+				DA92EB212AE8554200433041 /* MainPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA92EB092AE850D900433041 /* ViewController.swift in Sources */,
+				DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */,
 				DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */,
 				DA92EB052AE850D900433041 /* AppDelegate.swift in Sources */,
 				DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */,
