@@ -11,23 +11,18 @@ class RootViewController: UIViewController {
 
     @IBOutlet weak var tabView: UIView!
     @IBOutlet var activeView: UIView!
-    
     @IBOutlet weak var firstTab: UIButton!
     @IBOutlet weak var secondTab: UIButton!
     @IBOutlet weak var thirdTab: UIButton!
-    
-    var isTabbarViewHidden = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tabView.isHidden = isTabbarViewHidden
         
-        let blurEffect = UIBlurEffect(style: .dark) // Bulanıklık stilini seçebilirsiniz: .light, .dark, .extraLight vb.
-        let blurView = UIVisualEffectView(effect: blurEffect)
-
-        blurView.frame = view.bounds
-//        tabView.addSubview(blurView)
+        let blurEffect = UIBlurEffect(style: .dark) // Select style: .light, .dark, .extraLight vb.
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = tabView.bounds
+        tabView.insertSubview(visualEffectView, at: 0)
+        
         activeView.backgroundColor = UIColor.clear
         
         self.selectUser()
@@ -42,6 +37,19 @@ class RootViewController: UIViewController {
     public func toHomeNC() {
         if let homeNC = storyboard?.instantiateViewController(withIdentifier: "MainPageNC") as? UINavigationController {
             addNavigationControllerToActiveView(navigationController: homeNC)
+        }
+    }
+    
+    public func isTabbarHide(isTabbarHide: Bool) {
+        tabView.isHidden = isTabbarHide
+        firstTab.isHidden = isTabbarHide
+        secondTab.isHidden = isTabbarHide
+        thirdTab.isHidden = isTabbarHide
+        
+        if isTabbarHide == true {
+            
+        } else {
+            
         }
     }
 

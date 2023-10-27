@@ -51,7 +51,6 @@ class SelectUserViewController: UIViewController {
         view.layoutIfNeeded()
         
 //        view.backgroundColor = .systemBackground
-        
         view.backgroundColor = .black
         
         titleLbl.text = "Kim İzliyor?"
@@ -84,6 +83,8 @@ class SelectUserViewController: UIViewController {
         user5TitleL.text = "İsmail"
         user5TitleL.textColor = .white
         user5Icon.isHidden = true
+        
+        myDelegate.rootVC.isTabbarHide(isTabbarHide: true)
     }
 
     override func viewWillAppear(_ animated: Bool) {

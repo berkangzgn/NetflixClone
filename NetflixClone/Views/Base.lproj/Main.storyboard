@@ -405,48 +405,60 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vin-NP-gaP">
-                                <rect key="frame" x="0.0" y="798" width="414" height="64"/>
+                                <rect key="frame" x="0.0" y="810" width="414" height="86"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIr-Wg-Mh6">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="64"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="firstTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="UcA-Kh-GWG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S5-Ks-edS">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="64"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="secondTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="fV4-v1-Vta"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThH-cs-eYT">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="64"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="thirdTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="Q0K-KM-0sE"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFG-bg-lfL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIr-Wg-Mh6">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="firstTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="UcA-Kh-GWG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S5-Ks-edS">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="secondTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="fV4-v1-Vta"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThH-cs-eYT">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="54"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="thirdTabClicked:" destination="g7t-q5-h4K" eventType="touchUpInside" id="Q0K-KM-0sE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ThH-cs-eYT" secondAttribute="bottom" id="4MI-F4-Qq6"/>
+                                            <constraint firstItem="ZIr-Wg-Mh6" firstAttribute="leading" secondItem="yFG-bg-lfL" secondAttribute="leading" id="9ZH-1F-loD"/>
+                                            <constraint firstAttribute="bottom" secondItem="5S5-Ks-edS" secondAttribute="bottom" id="LgQ-qX-YH3"/>
+                                            <constraint firstAttribute="trailing" secondItem="ThH-cs-eYT" secondAttribute="trailing" id="Px4-fv-xO2"/>
+                                            <constraint firstItem="ThH-cs-eYT" firstAttribute="top" secondItem="yFG-bg-lfL" secondAttribute="top" id="S5g-UF-R20"/>
+                                            <constraint firstItem="ThH-cs-eYT" firstAttribute="leading" secondItem="5S5-Ks-edS" secondAttribute="trailing" id="THy-mf-DDE"/>
+                                            <constraint firstItem="ThH-cs-eYT" firstAttribute="width" secondItem="ZIr-Wg-Mh6" secondAttribute="width" id="WfZ-gE-sUj"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZIr-Wg-Mh6" secondAttribute="bottom" id="blw-Gt-cj8"/>
+                                            <constraint firstItem="5S5-Ks-edS" firstAttribute="width" secondItem="ZIr-Wg-Mh6" secondAttribute="width" id="iCA-Ad-lFZ"/>
+                                            <constraint firstItem="ZIr-Wg-Mh6" firstAttribute="top" secondItem="yFG-bg-lfL" secondAttribute="top" id="qQK-KH-4cW"/>
+                                            <constraint firstItem="5S5-Ks-edS" firstAttribute="top" secondItem="yFG-bg-lfL" secondAttribute="top" id="w9k-OF-KZN"/>
+                                            <constraint firstItem="5S5-Ks-edS" firstAttribute="leading" secondItem="ZIr-Wg-Mh6" secondAttribute="trailing" id="xyP-T6-rgl"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="ZIr-Wg-Mh6" firstAttribute="top" secondItem="vin-NP-gaP" secondAttribute="top" id="5fQ-1M-P4L"/>
-                                    <constraint firstItem="ThH-cs-eYT" firstAttribute="leading" secondItem="5S5-Ks-edS" secondAttribute="trailing" id="LX0-Fu-wwv"/>
-                                    <constraint firstItem="5S5-Ks-edS" firstAttribute="leading" secondItem="ZIr-Wg-Mh6" secondAttribute="trailing" id="WcK-GN-bgZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="ThH-cs-eYT" secondAttribute="trailing" id="YWM-2u-zKY"/>
-                                    <constraint firstAttribute="bottom" secondItem="5S5-Ks-edS" secondAttribute="bottom" id="fjW-YT-DeE"/>
-                                    <constraint firstItem="ThH-cs-eYT" firstAttribute="top" secondItem="vin-NP-gaP" secondAttribute="top" id="jkx-5o-Lft"/>
-                                    <constraint firstItem="ThH-cs-eYT" firstAttribute="width" secondItem="ZIr-Wg-Mh6" secondAttribute="width" id="pUL-MK-D4t"/>
-                                    <constraint firstItem="ZIr-Wg-Mh6" firstAttribute="leading" secondItem="vin-NP-gaP" secondAttribute="leading" id="rjI-7r-HG8"/>
-                                    <constraint firstAttribute="bottom" secondItem="ThH-cs-eYT" secondAttribute="bottom" id="ulA-bD-21Y"/>
-                                    <constraint firstItem="5S5-Ks-edS" firstAttribute="top" secondItem="vin-NP-gaP" secondAttribute="top" id="wjh-kB-ysk"/>
-                                    <constraint firstAttribute="width" secondItem="vin-NP-gaP" secondAttribute="height" multiplier="375:58" id="zJY-cQ-ieo"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZIr-Wg-Mh6" secondAttribute="bottom" id="zNu-vZ-ypl"/>
-                                    <constraint firstItem="5S5-Ks-edS" firstAttribute="width" secondItem="ZIr-Wg-Mh6" secondAttribute="width" id="zn9-kf-n5J"/>
+                                    <constraint firstItem="yFG-bg-lfL" firstAttribute="top" secondItem="vin-NP-gaP" secondAttribute="top" id="3pt-Rp-P72"/>
+                                    <constraint firstItem="yFG-bg-lfL" firstAttribute="leading" secondItem="vin-NP-gaP" secondAttribute="leading" id="hEa-Yu-yRg"/>
+                                    <constraint firstItem="yFG-bg-lfL" firstAttribute="height" secondItem="vin-NP-gaP" secondAttribute="height" multiplier="0.63" id="m7X-8S-tIN"/>
+                                    <constraint firstAttribute="trailing" secondItem="yFG-bg-lfL" secondAttribute="trailing" id="mIC-4L-nOy"/>
+                                    <constraint firstAttribute="width" secondItem="vin-NP-gaP" secondAttribute="height" multiplier="375:78" id="zJY-cQ-ieo"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -455,11 +467,11 @@
                         <constraints>
                             <constraint firstItem="0bQ-zM-kwm" firstAttribute="bottom" secondItem="mxc-ED-RL4" secondAttribute="bottom" id="5Jf-wk-LgG"/>
                             <constraint firstItem="mxc-ED-RL4" firstAttribute="leading" secondItem="0bQ-zM-kwm" secondAttribute="leading" id="E3Y-ms-k2C"/>
-                            <constraint firstItem="vin-NP-gaP" firstAttribute="bottom" secondItem="0bQ-zM-kwm" secondAttribute="bottom" id="KvB-Na-Fxs"/>
                             <constraint firstItem="vin-NP-gaP" firstAttribute="trailing" secondItem="0bQ-zM-kwm" secondAttribute="trailing" id="ORt-W5-kpW"/>
                             <constraint firstItem="mxc-ED-RL4" firstAttribute="top" secondItem="0bQ-zM-kwm" secondAttribute="top" id="TqV-Pq-kw0"/>
                             <constraint firstItem="0bQ-zM-kwm" firstAttribute="trailing" secondItem="mxc-ED-RL4" secondAttribute="trailing" id="VWn-XM-gp6"/>
                             <constraint firstItem="vin-NP-gaP" firstAttribute="leading" secondItem="0bQ-zM-kwm" secondAttribute="leading" id="WRe-FB-j10"/>
+                            <constraint firstAttribute="bottom" secondItem="vin-NP-gaP" secondAttribute="bottom" id="ZAl-kF-iEb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -472,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEV-eX-HFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-497" y="-376"/>
+            <point key="canvasLocation" x="-497.10144927536237" y="-376.33928571428572"/>
         </scene>
         <!--User Pwd View Controller-->
         <scene sceneID="7N6-qM-EUu">
