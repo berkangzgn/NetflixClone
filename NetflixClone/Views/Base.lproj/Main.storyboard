@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Who Is Watch View Controller-->
+        <!--Select User View Controller-->
         <scene sceneID="kDp-ZH-HvH">
             <objects>
-                <viewController storyboardIdentifier="WhoIsWhatchingVC" id="U6C-Kk-Y6p" customClass="WhoIsWatchViewController" customModule="NetflixClone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectUserVC" id="U6C-Kk-Y6p" customClass="SelectUserViewController" customModule="NetflixClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V9w-2X-cZr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,6 +39,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="editBtnClicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="fF5-uy-xuH"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b31-mH-aeX">
                                 <rect key="frame" x="62" y="221.5" width="290" height="453"/>
@@ -73,7 +76,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="user1Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="DUM-k3-ODc"/>
+                                                    <action selector="user1Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="9Rn-aM-YW5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -125,7 +128,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="user2Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="Y6U-Xe-d9M"/>
+                                                    <action selector="user2Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="H5G-a9-eQb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -177,7 +180,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="user3Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="Rb7-Ax-XzW"/>
+                                                    <action selector="user3Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="aoc-pE-X0L"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -229,7 +232,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="user4Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="9Jn-oA-3V2"/>
+                                                    <action selector="user4Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="LBh-XU-aD6"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -281,7 +284,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain"/>
                                                 <connections>
-                                                    <action selector="user5Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="agh-9S-d9L"/>
+                                                    <action selector="user5Clicked:" destination="U6C-Kk-Y6p" eventType="touchUpInside" id="0aU-Qq-Wnp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -354,33 +357,34 @@
                     </view>
                     <navigationItem key="navigationItem" id="6LB-L4-0mX"/>
                     <connections>
-                        <outlet property="editLbl" destination="vVh-5h-iyl" id="Ck9-ls-YRv"/>
-                        <outlet property="superV" destination="V9w-2X-cZr" id="h4s-U8-vip"/>
+                        <outlet property="editBtn" destination="tZ6-ni-moD" id="IcK-ux-51K"/>
+                        <outlet property="editLbl" destination="vVh-5h-iyl" id="XG0-K2-qL5"/>
+                        <outlet property="superV" destination="V9w-2X-cZr" id="ggw-hy-Y7v"/>
                         <outlet property="titleLbl" destination="ufX-Ii-TgU" id="lgb-FX-S3L"/>
-                        <outlet property="user1Btn" destination="MrY-7l-iOG" id="v3u-kq-3Ws"/>
-                        <outlet property="user1Icon" destination="jCq-aX-mot" id="gwX-0s-zjW"/>
-                        <outlet property="user1Img" destination="ZEH-WP-erb" id="gFP-D4-30S"/>
-                        <outlet property="user1TitleL" destination="Vo6-T3-gHJ" id="YK9-lh-IEV"/>
-                        <outlet property="user1V" destination="2Xd-wA-qBH" id="UFk-jH-KRU"/>
-                        <outlet property="user2Btn" destination="4fR-xz-JQp" id="rCl-vH-lCt"/>
-                        <outlet property="user2Icon" destination="7eX-qG-Vvb" id="82t-M7-PN9"/>
-                        <outlet property="user2Img" destination="WmK-ZV-TWx" id="CWg-Wx-UK9"/>
-                        <outlet property="user2TitleL" destination="w26-tp-KtN" id="u3q-9j-ClH"/>
-                        <outlet property="user2V" destination="Wf3-qx-V6i" id="sfL-av-zgY"/>
-                        <outlet property="user3Btn" destination="Fs7-k3-yz4" id="FXt-Ad-HlY"/>
-                        <outlet property="user3Icon" destination="wEK-Rf-esT" id="qrV-zA-GJw"/>
-                        <outlet property="user3Img" destination="8hg-tr-A1P" id="VB1-hy-3T4"/>
-                        <outlet property="user3TitleL" destination="TEI-UC-jha" id="LWK-xF-6xX"/>
-                        <outlet property="user3V" destination="sqV-EN-feE" id="v5r-Rt-9Qp"/>
-                        <outlet property="user4Btn" destination="a1N-es-Yad" id="WA9-Nd-6wY"/>
-                        <outlet property="user4Icon" destination="gNB-bB-sRI" id="TQj-50-rIz"/>
-                        <outlet property="user4Img" destination="6hE-iK-7us" id="7CQ-XB-inA"/>
-                        <outlet property="user4TitleL" destination="69i-4R-clY" id="W1v-Hs-vHI"/>
-                        <outlet property="user4V" destination="Lv1-tn-afv" id="f9L-hQ-1A8"/>
-                        <outlet property="user5Btn" destination="kZn-6H-XMU" id="WDe-P9-6Po"/>
-                        <outlet property="user5Icon" destination="L5B-Bo-mbW" id="bCJ-Tf-0XW"/>
-                        <outlet property="user5Img" destination="MWL-vL-v65" id="z1j-Rz-PhN"/>
-                        <outlet property="user5TitleL" destination="UM7-2e-hSQ" id="ho2-sc-0Vg"/>
+                        <outlet property="user1Btn" destination="MrY-7l-iOG" id="Nzm-R9-7f1"/>
+                        <outlet property="user1Icon" destination="jCq-aX-mot" id="Q6r-YL-Sne"/>
+                        <outlet property="user1Img" destination="ZEH-WP-erb" id="nMe-7h-D0w"/>
+                        <outlet property="user1TitleL" destination="Vo6-T3-gHJ" id="79N-Y6-xjG"/>
+                        <outlet property="user1V" destination="2Xd-wA-qBH" id="hBY-qi-9ed"/>
+                        <outlet property="user2Btn" destination="4fR-xz-JQp" id="QK1-h3-0qx"/>
+                        <outlet property="user2Icon" destination="7eX-qG-Vvb" id="jMY-1G-bUy"/>
+                        <outlet property="user2Img" destination="WmK-ZV-TWx" id="BrB-uV-xke"/>
+                        <outlet property="user2TitleL" destination="w26-tp-KtN" id="ihf-LA-cZ4"/>
+                        <outlet property="user2V" destination="Wf3-qx-V6i" id="VzQ-79-12h"/>
+                        <outlet property="user3Btn" destination="Fs7-k3-yz4" id="4fx-2r-7Th"/>
+                        <outlet property="user3Icon" destination="wEK-Rf-esT" id="QzC-dh-hde"/>
+                        <outlet property="user3Img" destination="8hg-tr-A1P" id="Cmi-v3-8Nd"/>
+                        <outlet property="user3TitleL" destination="TEI-UC-jha" id="ZF7-FB-pLG"/>
+                        <outlet property="user3V" destination="sqV-EN-feE" id="OUE-bj-tzS"/>
+                        <outlet property="user4Btn" destination="a1N-es-Yad" id="egq-wB-2kM"/>
+                        <outlet property="user4Icon" destination="gNB-bB-sRI" id="L3e-zo-iiG"/>
+                        <outlet property="user4Img" destination="6hE-iK-7us" id="Iic-Pg-3WE"/>
+                        <outlet property="user4TitleL" destination="69i-4R-clY" id="IBz-gl-mzx"/>
+                        <outlet property="user4V" destination="Lv1-tn-afv" id="5LL-r4-uY5"/>
+                        <outlet property="user5Btn" destination="kZn-6H-XMU" id="tqD-9f-FMY"/>
+                        <outlet property="user5Icon" destination="L5B-Bo-mbW" id="6Vv-qG-zeI"/>
+                        <outlet property="user5Img" destination="MWL-vL-v65" id="WYh-37-Pay"/>
+                        <outlet property="user5TitleL" destination="UM7-2e-hSQ" id="tnq-Bb-3Z3"/>
                         <outlet property="user5V" destination="6uq-Sa-gFX" id="9nL-Jf-TTS"/>
                     </connections>
                 </viewController>

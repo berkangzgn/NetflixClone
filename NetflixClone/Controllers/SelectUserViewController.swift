@@ -12,7 +12,7 @@ class SelectUserViewController: UIViewController {
     @IBOutlet weak var editLbl: UILabel!
     @IBOutlet weak var editBtn: UIButton!
     @IBOutlet var superV: UIView!
-    
+
     @IBOutlet weak var user1V: UIView!
     @IBOutlet weak var user1Img: UIImageView!
     @IBOutlet weak var user1TitleL: UILabel!
@@ -50,7 +50,9 @@ class SelectUserViewController: UIViewController {
         view.setNeedsLayout()
         view.layoutIfNeeded()
         
-        view.backgroundColor = .systemBackground
+//        view.backgroundColor = .systemBackground
+        
+        view.backgroundColor = .black
         
         titleLbl.text = "Kim İzliyor?"
         titleLbl.textColor = .white
@@ -89,16 +91,12 @@ class SelectUserViewController: UIViewController {
     }
     
     @IBAction func editBtnClicked(_ sender: Any) {
-        if user1Icon.isHidden ==  true {
-            
-        } else {
-            
-        }
+        
     }
     
     @IBAction func user1Clicked(_ sender: Any) {
         if user1Icon.isHidden ==  true {
-            myDelegate.rootVC.toHomeNC()
+            self.goHome()
             
         } else {
             self.goPwd()
@@ -107,7 +105,7 @@ class SelectUserViewController: UIViewController {
     
     @IBAction func user2Clicked(_ sender: Any) {
         if user2Icon.isHidden ==  true {
-            myDelegate.rootVC.toHomeNC()
+            self.goHome()
             
         } else {
             self.goPwd()
@@ -116,7 +114,7 @@ class SelectUserViewController: UIViewController {
     
     @IBAction func user3Clicked(_ sender: Any) {
         if user3Icon.isHidden ==  true {
-            myDelegate.rootVC.toHomeNC()
+            self.goHome()
 
         } else {
             self.goPwd()
@@ -125,7 +123,7 @@ class SelectUserViewController: UIViewController {
     
     @IBAction func user4Clicked(_ sender: Any) {
         if user4Icon.isHidden ==  true {
-            myDelegate.rootVC.toHomeNC()
+            self.goHome()
             
         } else {
             self.goPwd()
@@ -134,7 +132,7 @@ class SelectUserViewController: UIViewController {
     
     @IBAction func user5Clicked(_ sender: Any) {
         if user5Icon.isHidden ==  true {
-            myDelegate.rootVC.toHomeNC()
+            self.goHome()
             
         } else {
             self.goPwd()
@@ -144,6 +142,12 @@ class SelectUserViewController: UIViewController {
     func goPwd() {
         if let userPwdVC = myDelegate.mainStoryboard.instantiateViewController(withIdentifier: "UserPwdVC") as? UserPwdViewController {
             navigationController?.pushViewController(userPwdVC, animated: true)
+        }
+    }
+    
+    func goHome() {
+        if let homeVC = myDelegate.mainStoryboard.instantiateViewController(withIdentifier: "MainPageVC") as? MainPageViewController {
+            navigationController?.pushViewController(homeVC, animated: true)
         }
     }
 }

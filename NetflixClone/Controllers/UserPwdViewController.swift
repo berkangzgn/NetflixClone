@@ -135,7 +135,8 @@ extension UserPwdViewController: UITextFieldDelegate {
     func checkPwd() {
         // TODO: Pwd should check
         
-        myDelegate.rootVC.toHomeNC()
+        if let homeVC = myDelegate.mainStoryboard.instantiateViewController(withIdentifier: "MainPageVC") as? MainPageViewController {
+            navigationController?.pushViewController(homeVC, animated: true)
+        }
     }
-
 }

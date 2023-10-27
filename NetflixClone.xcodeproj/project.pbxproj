@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA92EB052AE850D900433041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB042AE850D900433041 /* AppDelegate.swift */; };
 		DA92EB072AE850D900433041 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB062AE850D900433041 /* SceneDelegate.swift */; };
 		DA92EB092AE850D900433041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB082AE850D900433041 /* ViewController.swift */; };
 		DA92EB0C2AE850D900433041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA92EB0A2AE850D900433041 /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB212AE8554200433041 /* MainPageViewController.swift */; };
 		DA92EB242AE8559600433041 /* NewAndPopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB232AE8559600433041 /* NewAndPopularViewController.swift */; };
 		DA92EB262AE856ED00433041 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB252AE856ED00433041 /* MyAccountViewController.swift */; };
+		DA92EB272AE85DFF00433041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92EB042AE850D900433041 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,8 +183,8 @@
 				DA92EB092AE850D900433041 /* ViewController.swift in Sources */,
 				DA92EB242AE8559600433041 /* NewAndPopularViewController.swift in Sources */,
 				DA92EB222AE8554200433041 /* MainPageViewController.swift in Sources */,
+				DA92EB272AE85DFF00433041 /* AppDelegate.swift in Sources */,
 				DA92EB202AE853C400433041 /* UserPwdViewController.swift in Sources */,
-				DA92EB052AE850D900433041 /* AppDelegate.swift in Sources */,
 				DA92EB1C2AE852F200433041 /* RootViewController.swift in Sources */,
 				DA92EB1E2AE8536000433041 /* SelectUserViewController.swift in Sources */,
 				DA92EB072AE850D900433041 /* SceneDelegate.swift in Sources */,
