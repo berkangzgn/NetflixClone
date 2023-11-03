@@ -479,6 +479,8 @@
                         <outlet property="firstTab" destination="ZIr-Wg-Mh6" id="5pA-G0-Xf7"/>
                         <outlet property="secondTab" destination="5S5-Ks-edS" id="RIa-jK-Rv9"/>
                         <outlet property="tabView" destination="vin-NP-gaP" id="Gee-71-2EJ"/>
+                        <outlet property="tabViewAspect" destination="zJY-cQ-ieo" id="Xub-B9-ijM"/>
+                        <outlet property="tabViewHeight" destination="m7X-8S-tIN" id="sn5-iL-7OM"/>
                         <outlet property="thirdTab" destination="ThH-cs-eYT" id="Ynq-PU-ONT"/>
                     </connections>
                 </viewController>
@@ -698,6 +700,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ysv-Gb-TnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2113" y="28"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="KeX-Q9-33D">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="Dmx-SQ-TY0" customClass="SearchViewController" customModule="NetflixClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9R-sh-Luz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="9ak-H0-zT2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="js5-h5-ZmK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3088" y="27"/>
         </scene>
         <!--New And Popular View Controller-->
         <scene sceneID="lU1-7u-6sl">
